@@ -1,0 +1,230 @@
+*{
+    box-sizing:  border-box;
+    font-size: 18px;
+}
+
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.sidebar{
+    background-color:rgb(18, 202, 202);
+    color: white;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 0;
+    top: 0;
+    left: 0; 
+    position: sticky;
+}
+
+.sidebar .avatar{
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar .avatar .avatar-icon{
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    color: rgb(18, 202, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 200;
+}
+.sidebar .avatar .name{
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.sidebar .menu .item{
+    width: 90%;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border: none;
+}
+.sidebar .menu .active{
+    color: rgb(18, 202, 202);
+    background-color: white;
+    cursor: pointer;
+}
+.sidebar .menu .item:hover{
+    color: rgb(18, 202, 202);
+    background-color: white;
+    cursor: pointer;
+}
+.sidebar .menu .item .fa {
+    font-size: 30px;
+    margin-right: 25px;
+}
+.sidebar .menu .item a:hover{
+    color: rgb(18, 202, 202);
+} 
+.sidebar .menu .item .item-name{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.sidebar .social {
+    padding: 50px 20px 50px 25px;
+}
+.sidebar .social .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.sidebar .social .item{
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    background-color: white;
+    color:rgb(18, 202, 202);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar .description {
+    padding: 50px 25px;
+}
+
+.main{
+    padding: 0 120px;
+}
+
+.main .link{
+    color: blue;
+}
+.main .link:hover{
+    color: rgb(18, 160, 160);
+}
+
+.main p{
+    color: rgb(160, 160, 160);
+    line-height: 40px;
+}
+
+.main h4{
+    color: rgb(18, 160, 160);
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.main .search-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 80px 0;
+}
+.main .search-area .search-bar{
+    height: 60px;
+    width: 480px;
+    margin-right: 25px;
+    padding: 10px;
+    border: solid rgb(18, 202, 202) 1px;
+    outline: none;
+}
+.main .search-area .search-icon{
+    border: none;
+    padding-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(18, 202, 202);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.main .search-area .search-icon:hover{
+    background-color: rgb(18, 196, 202);
+}
+
+.main .footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 0 0;
+    border-top:rgb(160,160,160) solid 1px;
+    padding: 10px 0;
+}
+.main .footer .design .templatemo{
+    color:rgb(18, 202, 202);
+    font-size: 18px;
+}
+.main .footer span{
+    font-size: 18px;
+    color:rgb(160, 160, 160);
+}
+
+@media screen and (max-width: 991px){
+    .sidebar{
+        display: none;
+    }
+    .sidebar .menu .item{
+        width: 90%;
+        padding: 12px 20px;
+        margin-bottom: 12px;
+        border: none;
+    }
+    .sidebar .menu .item .item-name{
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .main{
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .main{
+        padding: 0 80px;
+    }
+
+    .main .link{
+        font-size: 15px;
+    }
+
+    .main p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .main h4{
+        font-size: 30px;
+    }
+    .main .footer{
+        display: block;
+        margin: 80px 0 0 0;
+        border-top:rgb(160,160,160) solid 1px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .main{
+        padding: 0 50px;
+    }
+}

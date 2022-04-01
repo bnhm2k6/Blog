@@ -1,0 +1,140 @@
+.main video{
+    max-width: 100%;
+    height: auto;
+    padding: 50px 0;
+    border-top: 5px solid rgb(18, 202, 202);
+}
+
+.main .part1{
+    padding-right: 0;
+    margin-bottom: 50px;
+}
+
+.main .information .date-author{
+    color: rgb(160,160,160);
+    display: block;
+    margin: 15px 0 40px 0;
+}
+.main .information p{
+    margin-bottom: 25px;
+}
+
+.main .information .type{
+    display:block;
+    text-align: right;
+    color:rgb(16, 160, 160);
+    margin-bottom: 25px;
+}
+
+.main .cmts h4{
+    border-bottom: solid rgb(18, 202, 202) 5px;
+    padding-bottom: 10px;
+}
+.main .cmts .cmt-box{
+    display: flex;
+    justify-content: space-between;
+}
+.main .cmts .line{
+    border-bottom: solid rgb(160,160,160) 1px;
+    padding: 50px 0;
+    margin: 20px 0;
+}
+.main .cmts .cmt-box .avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+}
+.main .cmts .cmt-box .avatar img{
+    border-radius: 50% ;
+    padding: 5px;
+    margin: 5px;
+    border: solid rgb(160,160,160) 1px;
+}
+.main .cmts .cmt-box .cmt{
+    color: rgb(160,160,160);
+}
+.main .cmts .cmt-box .reply-date{
+    display: flex;
+    justify-content: space-between;
+}
+.main .cmts .cmt-box .reply{
+    background-color: white;
+    color:rgb(16, 160, 160) ;
+    border: none;
+    padding: 0;
+}
+.main .cmts .cmt-box .date{
+    color:rgb(16, 160, 160);
+}
+
+.main .part2{
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+.main .categories{
+    margin-bottom: 75px;
+}
+.main .categories h4{
+    border-top: solid rgb(18, 202, 202) 5px;
+    padding: 15px 0; 
+}
+.main .categories .type{
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    margin-left: 30px;
+    color: rgb(16, 160, 160);
+}
+
+.main .related-posts h4{
+    border-top: solid rgb(18, 202, 202) 5px;
+    padding: 15px 0; 
+}
+.main .related-posts a{
+    display: block;
+    margin-top:25px;
+}
+.main .related-posts a:hover p{
+    color: rgb(0, 96, 96);
+}
+.main .related-posts img{
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+.main .related-posts p{
+    color: rgb(16, 160, 160); 
+}
+
+.main .your-comment{
+    display: flex;
+    flex-direction: column;
+}
+.main .your-comment input{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 25px;
+    border: solid rgb(18, 202, 202) 1px;
+    outline: none;
+}
+.main .your-comment .comment-box{
+    width:360px;
+    text-align: right;
+    margin-top: 15px;
+}
+.main .your-comment .comment{
+    height: 150px;
+}
+
+.main .your-comment button{
+    background-color: rgb(18, 202, 202);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width:120px;
+    height: 50px;
+}
+.main .your-comment button:hover{
+    background-color: rgb(18,192,202);
+}

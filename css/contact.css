@@ -1,0 +1,88 @@
+.main .maps iframe {
+    width: 100%;
+    height: 600px;
+    padding: 50px 0;
+    border: none;
+    border-top: 5px solid rgb(18, 202, 202);
+}
+.main .contact h4{
+    margin-bottom: 60px;
+}
+.main .contact .contact-form{
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.main .contact form{
+    text-align: right;
+}
+.main .contact .form-group label{
+    color: rgb(16,160,160);
+    font-size: 20px;
+}
+.main .contact .form-group label{
+    text-align: left;
+}
+.main .contact .form-group input{   
+    height: 45px;
+    margin-bottom: 10px;
+    border: solid rgb(18, 202, 202) 1px;
+    outline: none;
+}
+.main .contact .form-group .message{
+    height: 200px;
+}
+.main .contact .send{   
+    text-align: right;
+}
+.main .contact .send div{
+    padding-right: 0;
+}
+.main .contact .send button{
+    background-color: rgb(18, 202, 202);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width:120px;
+    height: 50px;
+}
+.main .contact .send button:hover{
+    background-color: rgb(18,192,202);
+}
+.main .contact .description{
+    padding-left: 50px;
+}
+.main .contact .info p a:hover{
+    color: rgb(16,160,160)
+}
+.main .contact .info .tel{
+    margin-top: 30px;
+}
+.main .contact .info .email{
+    margin-bottom: 30px;
+}
+.main .contact .social-media{
+    margin-top: 30px;
+}
+.main .contact .social-media .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.main .contact .social-media .item{
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    background-color: rgb(18, 202, 202);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 767px){
+    .main .contact .description{
+        padding-left: 0;
+    }
+}
