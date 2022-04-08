@@ -90,7 +90,7 @@
     .main .pages .control{
         padding: 8px 30px;
         border-radius: 5px;
-        margin: 10px;
+        margin: 0;
     }
     .main .pages .num{
         padding: 8px 15px;
@@ -102,11 +102,13 @@
     }
     .main .pages .disable{
         order: 1;
+        margin-right: 10px;
     }
     .main .pages .active{
         order: 3;
         background-color: rgb(18, 202, 202);
         color: white;
+        margin-left: 10px;
     }
     .main .pages .page-num{
         order: 2;
