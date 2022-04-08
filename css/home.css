@@ -40,81 +40,80 @@
 
 .main .pages{
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: row;
     margin-top: 120px;
 }
 .main .pages .page-num{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 10px;
+    margin-left: auto;
 }
-.main .pages .page-num .num{
+.main .pages .num{
     padding: 10px 20px;
     background-color: rgb(239,239,239);
     border-radius: 5px;
     margin: 0px 5px;
     color:rgb(160, 160, 160);
+    align-self: flex-end;
 }
-.main .pages .page-num .num:hover{
+.main .pages .num:hover{
     background-color: rgb(18, 202, 202);
     color: white;
 }
-.main .pages .page-num .active{
-    background-color: rgb(18, 202, 202);
-    color: white;
-}
-.main .pages .page-num .page{
+.main .pages .page{
     margin-right: 5px;
     color:rgb(160, 160, 160);
 }
-.main .pages .page-control a{
+.main .pages .control{
     padding: 12px 40px;
     border-radius: 5px;
     margin-right: 15px;
 }
-.main .pages .page-control .disabled{
+.main .pages .disabled{
     background-color: rgb(239,239,239);
     color:rgb(160,160,160)
 }
-.main .pages .page-control .active{
+.main .pages .active{
     background-color: rgb(18, 202, 202);
     color: white;
 }
-.main .pages .page-control .disabled:hover{
+.main .pages .disabled:hover{
     cursor: not-allowed;
 }
-.main .pages .page-control .active:hover{
+.main .pages .active:hover{
     background-color: rgb(16, 192, 192);
 }
 
 @media screen and (max-width: 798px){
-    .main .pages{
-        display: block;
+    .main .pages {
+        justify-content: space-between;
     }
-    .main .pages .page-control{
-        margin-bottom: 30px
+    .main .pages .control{
+        padding: 8px 30px;
+        border-radius: 5px;
+        margin: 10px;
     }
-    .main .pages .page-control a{
-        padding: 12px 40px;
-        margin-right: 10px;
-    }
-    .main .pages .page-num .num{
-        padding: 8px 16px;
+    .main .pages .num{
+        padding: 8px 15px;
         background-color: rgb(239,239,239);
         border-radius: 5px;
-        margin: 0px 4px;
+        margin: 20px 3px;
         color:rgb(160, 160, 160);
+        align-self: flex-end;
     }
-    .main .pages .page-num .active{
+    .main .pages .disable{
+        order: 1;
+    }
+    .main .pages .active{
+        order: 3;
         background-color: rgb(18, 202, 202);
         color: white;
     }
-}
-@media screen and (max-width: 575px){
     .main .pages .page-num{
-        display: block;
+        order: 2;
+        margin-left: 0;
     }
+    .main .pages .page-num .page{
+        display: none;
+    }
+
 }
